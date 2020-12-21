@@ -1,0 +1,2 @@
+[2018-11-26 00:52:42] layer "© All Rights Reserved 2014. Find  More at Pixelhint.com": Unsupported extension: com
+[2018-11-26 00:52:42] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
