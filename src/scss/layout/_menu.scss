@@ -1,0 +1,53 @@
+.menu {
+
+    &__title {
+        background-color: $red;
+        color:white;
+        width: 160px;
+        margin: 0 auto 30px;
+        padding: 25px 0 35px;
+        position:relative;
+        &::after{
+            content:"";
+            display: block;
+            border: solid transparent;
+            border-width: 10px 80px;
+            border-bottom-color: white;
+            position:absolute;
+            bottom:0;
+        }
+
+        
+    }
+
+    &__button {
+        @include font-aleo(400);
+        font-size:14px;
+        background-color:$red;
+        color:white;
+        border:none;
+        margin-top:30px;
+        padding:15px 25px;
+        &::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            display: inline-block;
+            border:solid white;
+            border-width: 0 1px 1px 0;
+            transform:rotate(45deg);
+            margin-bottom: 3px;
+        }
+
+        &:focus {
+            outline:none;
+        }
+    }
+
+    /*horizontal line in button*/
+
+    span {
+        padding: 0 15px;
+    }
+
+}

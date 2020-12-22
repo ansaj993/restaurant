@@ -5,6 +5,7 @@
 @import "base/typography";
 
 @import "components/navigation";
+@import "components/menu-table";
 @import "components/photoGallery";
 
 @import "layout/header";
@@ -23,4 +24,11 @@
 body {
     @include reset;
     text-align: center;
+}
+
+main {
+    max-width: 1100px;
+    margin:auto;
+    position:relative;
+    border-top:4px solid $red;
 }

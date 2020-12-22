@@ -1,0 +1,20 @@
+.table {
+    text-align: left;
+    font-size:16px;
+
+    &__item, &__price {
+        @include font-aleo(400);
+        color:$darkGray;
+    }
+
+   /* &__line {
+        border-bottom: 1px solid $lightGray;
+    }*/
+
+    &__ingredients {
+        @include font-aleo(300);
+        font-style: italic;
+        color:$lightGray;
+    }
+
+}
