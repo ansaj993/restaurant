@@ -4,6 +4,22 @@ h1 {
 }
 
 h2 {
-   // @include light;
+    @include font-aleo(300);
     font-size: 40px;
 }
+
+h3 {
+    @include font-aleo(700);
+    font-size: 20px;
+}
+
+p, li {
+    @include font-aleo(300);
+    font-size: 16px;
+}
+
+ul {
+    @include list-reset;
+}
+
+
