@@ -15,6 +15,11 @@
 @import "layout/gallery";
 @import "layout/footer";
 
+
+*{
+    box-sizing: border-box;
+}
+
 body {
     @include reset;
     text-align: center;

@@ -1,0 +1,55 @@
+.banner {
+    position:relative;
+    &__wrapper {
+        height:80vh;
+        background: no-repeat center;
+        background-size: cover;
+        display:flex;
+        align-items: center;
+        position:absolute;
+        top:0;
+        left:0;
+
+        &--first {
+            background-image: url(../images/hero.jpg);
+        }   
+
+        &--second {
+            background-image: url(../images/fruit-2373434_1920.jpg);
+            display: none;
+        }   
+    }
+
+    &__container {
+        width:80%;
+        margin:auto;
+    }
+
+    &__title {
+        @include reset;
+    }
+
+    &__content {
+        color:white;
+        margin-top:40px;
+        display:flex;
+        align-items:center;
+        line-height: 1.5em;
+
+        &::before, &::after {
+            content:"";
+            width:40px;
+            height:1px;
+            display: block;
+            background-color:white;
+        }
+
+        &::before {
+            margin-right:18px;
+        }
+
+        &::after {
+            margin-left:18px;
+        }
+    }
+}
