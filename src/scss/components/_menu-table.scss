@@ -1,6 +1,7 @@
 .table {
     text-align: left;
     font-size:16px;
+    margin:auto;
 
     &__item, &__price {
         @include font-aleo(400);
