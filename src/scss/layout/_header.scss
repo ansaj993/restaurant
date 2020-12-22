@@ -1,0 +1,23 @@
+.header {
+    height:66px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    
+    &__logo {
+        width:80px;
+    }
+
+    &__bar {
+        height:2px;
+        width: 28px;
+        background-color:$darkerGray;
+    
+        &:nth-child(even){
+            margin:5px 0;
+        }
+    }
+
+   
+}

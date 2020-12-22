@@ -16,5 +16,6 @@
 @import "layout/footer";
 
 body {
+    @include reset;
     text-align: center;
 }
