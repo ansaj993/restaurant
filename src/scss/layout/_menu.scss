@@ -7,7 +7,9 @@
         margin: 0 auto 30px;
         padding: 25px 0 35px;
         position:relative;
-        &::after{
+        text-transform: capitalize;
+
+        &::after {
             content:"";
             display: block;
             border: solid transparent;
@@ -15,9 +17,7 @@
             border-bottom-color: white;
             position:absolute;
             bottom:0;
-        }
-
-        
+        }        
     }
 
     &__button {
@@ -26,7 +26,7 @@
         background-color:$red;
         color:white;
         border:none;
-        margin-top:30px;
+        margin:40px 0;
         padding:15px 25px;
         &::after {
             content: "";
@@ -38,6 +38,8 @@
             transform:rotate(45deg);
             margin-bottom: 3px;
         }
+
+        /*remove outline on click*/
 
         &:focus {
             outline:none;

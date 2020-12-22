@@ -1,6 +1,7 @@
 @mixin font-aleo($weight) {
     font-family: 'Aleo', serif;
     font-weight: $weight;
+    margin:0;
 }
 
 @mixin reset {

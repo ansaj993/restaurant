@@ -1,0 +1,15 @@
+.item {
+    width: 80%;
+    margin:0 auto 40px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin:20px 0;
+    }
+
+    &__like {
+        text-align:left;
+        font-size: 14px;
+    }
+}

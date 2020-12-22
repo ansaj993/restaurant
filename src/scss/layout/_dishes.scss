@@ -1,0 +1,17 @@
+.dishes {
+    padding:50px 0;
+
+    &__wrap {
+        display:flex;
+        align-items: space-between;
+        flex-wrap: wrap;
+    }
+    
+    &__title {
+        text-align: left;
+        width: 90%;
+        margin: 0 auto 50px;
+    }
+
+   
+}
