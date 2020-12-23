@@ -14,3 +14,16 @@
 
     list-style-type:none;
 }
+
+@mixin line {
+    display: flex;
+    align-items: center;  
+    &::after {
+        content:"";
+        display: block;
+        width:200px;
+        height: 1px;
+        background-color: $lightGray;
+        margin-left: 15px;
+    }
+}

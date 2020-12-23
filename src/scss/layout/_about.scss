@@ -1,5 +1,12 @@
 .about {
 
+  &__subtitle{
+    @include breakpoint(tablet){
+      @include line;
+  }
+
+  }
+
   &__wrap {
     display: flex;
     justify-content: space-between;

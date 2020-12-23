@@ -9,6 +9,11 @@
     
     &__title {
         text-align: left;
+        
+        @include breakpoint(tablet){
+              @include line;
+          }
+        
     }
 
     @include breakpoint(tablet) {

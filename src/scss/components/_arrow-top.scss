@@ -1,3 +1,13 @@
 .arrow {
     padding-bottom:30px;
+
+    @include breakpoint(tablet) {
+        position: fixed;
+        bottom:0;
+        right:20px;
+    }
+
+    @include breakpoint(desktop_min) {
+        bottom:0;
+    }
 }
