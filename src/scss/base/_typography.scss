@@ -30,10 +30,41 @@ p, li {
     @include font-aleo(300);
     font-size: 16px;
     color:$darkGray;
+    line-height: 1.8em;
 }
+
 
 ul {
     @include list-reset;
 }
 
+blockquote {
+    @include font-aleo(400);
+    font-style: italic;
+    font-size:24px;
+    line-height: 1.5em;
+    margin:50px 0;
+    color:$darkGray;
+    position: relative;
+    
+    &::before, &::after {
+        @include font-aleo(400);
+        font-style:italic;
+        font-size: 128px;
+        color: $lightGray;
+        position: absolute;
+    }
+
+    &::before {
+        content:'\201C';
+        top: 15px;
+        left: -15px;
+    }
+
+    &::after {
+        content:'\201E';
+        bottom: 15px;
+    }
+    
+}
 
