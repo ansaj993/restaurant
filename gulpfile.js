@@ -10,7 +10,6 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 var replace = require('gulp-replace');
-var notify = require("gulp-notify");
 
 
 // File paths
@@ -26,7 +25,6 @@ function scss(){
         .pipe(sass()) // compile SCSS to CSS
         .pipe(postcss([ autoprefixer(), cssnano() ])) // PostCSS plugins
         .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
-        .pipe(notify({ title: 'Scss', message: 'Scss task completed'}))
         .pipe(dest('dist')
     ); // put final CSS in dist folder
 }
