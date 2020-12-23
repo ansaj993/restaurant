@@ -1,8 +1,8 @@
 /*item in dishes section*/
 
-.item {
+.dish {
     width: 100%;
-    margin:0 auto 40px;
+    margin:0 auto 25px;
 
     &__image {
         width:100%;
@@ -22,7 +22,7 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        margin:20px 0;
+        margin:15px 0 10px;
     }
 
     &__like {
