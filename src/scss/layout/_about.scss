@@ -1,5 +1,18 @@
 .about {
 
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__column {
+    width: 100%;
+    @include breakpoint(tablet) {
+      width: 48%;
+    }
+  }
+
   ul {
     padding: 0 0 20px 12px;
     
@@ -32,6 +45,10 @@
       }
       text-align: center;
       display:block;
+
+      @include breakpoint(tablet){
+        text-align: left;
+      }
     }
 
   }

@@ -1,6 +1,15 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
+@import "layout/media";
+@import "layout/header";
+@import "layout/banner";
+@import "layout/menu";
+@import "layout/dishes";
+@import "layout/about";
+@import "layout/gallery";
+@import "layout/footer";
+
 @import "base/fonts";
 @import "base/typography";
 
@@ -10,13 +19,6 @@
 @import "components/photoGallery";
 @import "components/arrow-top";
 
-@import "layout/header";
-@import "layout/banner";
-@import "layout/menu";
-@import "layout/dishes";
-@import "layout/about";
-@import "layout/gallery";
-@import "layout/footer";
 
 
 *{
@@ -26,6 +28,10 @@
 body {
     @include reset;
     text-align: center;
+
+    @include breakpoint(tablet) {
+        text-align: left;
+    }
 }
 
 main {
@@ -33,4 +39,12 @@ main {
     max-width: 1100px;
     margin:auto;
     position:relative;
+
+    @include breakpoint(mobile_landscape) {
+        width:90%;
+    }
+
+    @include breakpoint(desktop_min) {
+        width:87%;
+    }
 }

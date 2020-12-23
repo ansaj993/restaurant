@@ -3,14 +3,16 @@
 
     &__wrap {
         display:flex;
-        align-items: space-between;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
     
     &__title {
         text-align: left;
-        width: 90%;
-        margin: 0 auto 50px;
+    }
+
+    @include breakpoint(tablet) {
+        padding:70px 0;
     }
 
    
