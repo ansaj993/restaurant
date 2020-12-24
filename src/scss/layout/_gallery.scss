@@ -5,6 +5,10 @@
         padding:70px 0;
     }
 
+    @include breakpoint(desktop_min) {
+        padding:100px 0;
+    }
+
     &__title {
         @include line;
     }
@@ -66,7 +70,7 @@
 
         &:hover {
             .gallery__overlay {
-                background: rgba(0,0,0,0.5) url(../images/search-icon.png) center/35px no-repeat;
+                background: rgba(0,0,0,0.5) url(../images/search-icon.png) center/30px no-repeat;
             }
 
             img {

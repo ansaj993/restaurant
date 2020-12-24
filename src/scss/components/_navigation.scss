@@ -1,3 +1,26 @@
 nav {
-    display:none;
+    display: none;
+
+    @include breakpoint(desktop_min) {
+        display: block;
+        width:40%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            @include font-aleo(400);
+            @include navBorder(white);
+            font-size:14px;
+            color:$darkerGray;
+            padding:10px 12px;
+
+            &:hover {
+                @include navBorder($red);
+                color:$red;
+            }
+        }
+    }
 }

@@ -16,5 +16,9 @@
         padding:70px 0;
     }
 
+    @include breakpoint(desktop_min) {
+        padding:100px 0;
+    }
+
    
 }
