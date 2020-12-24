@@ -6,6 +6,7 @@
     &__wrap {
         display: flex;
         justify-content: space-between;
+        align-items:center;
     }
     
     
@@ -15,6 +16,7 @@
 
     &__icon {
         margin:8px 0;
+        z-index: 100;
 
         @include breakpoint(desktop_min) {
             display: none;

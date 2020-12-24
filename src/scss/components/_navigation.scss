@@ -4,6 +4,9 @@ nav {
     @include breakpoint(desktop_min) {
         display: block;
         width:40%;
+        position: relative;
+        background: transparent;
+
     }
 
     ul {
@@ -14,18 +17,50 @@ nav {
         li {
             @include font-aleo(400);
             letter-spacing: 1px;
+            width:100%;
+            padding:20px 0;
+
+            @include breakpoint(desktop_min) {
+                width: 25%;
+            }
         }
 
         a {
-            @include navBorder(white);
-            font-size:14px;
-            color:$darkerGray;
+            @include navBorder(transparent);
+            font-size:20px;
+            color:white;
             padding:10px 12px;
 
-            &:hover {
-                @include navBorder($red);
-                color:$red;
+            @include breakpoint(desktop_min) {
+                font-size:14px;
+                color:$darkerGray;
             }
+
+            &:hover {
+                @include navBorder($darkerGray);
+                color:$darkerGray;
+
+                @include breakpoint(desktop_min) {
+                    @include navBorder($red);
+                    color:$red;
+                }
+
+            }
+            
         }
     }
+}
+
+/*adding class in js*/
+
+.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f34949;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }

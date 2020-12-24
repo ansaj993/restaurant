@@ -15,10 +15,6 @@
         letter-spacing: 1px;
     }
 
-    /*&__line {
-        border-bottom: 1px solid $lightGray;
-    }*/
-
     &__ingredients {
         @include font-aleo(300);
         font-style: italic;

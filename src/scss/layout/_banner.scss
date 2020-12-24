@@ -3,6 +3,8 @@
     width: 100%;
     position:relative;
     border-bottom:4px solid $red;
+    display: flex;                      /*positioning all elements, including dots*/
+    justify-content: center;
     
     &__wrapper {
         background: no-repeat center;

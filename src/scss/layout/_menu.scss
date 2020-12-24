@@ -1,6 +1,11 @@
 .menu {
     text-align: center;
-    padding-bottom:50px;
+    padding-bottom:30px;
+
+    @include breakpoint(tablet){
+        padding-bottom: 50px;
+    }
+    
     &__title {
         background-color: $red;
         color:white;

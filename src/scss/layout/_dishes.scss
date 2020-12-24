@@ -1,5 +1,10 @@
 .dishes {
-    padding:$sectionPadding;
+    padding: $sectionMobile;
+   
+
+    @include breakpoint(tablet){
+        padding:$sectionPadding;
+    }
 
     &__heading {
         display: flex;
