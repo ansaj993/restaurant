@@ -18,12 +18,35 @@
 @mixin line {
     display: flex;
     align-items: center;  
-    &::after {
+    justify-content:center;
+
+    @include breakpoint(tablet) {
+        justify-content: flex-start;
+    }
+    
+    &::before, &::after {
         content:"";
         display: block;
-        width:200px;
+        width:40px;
         height: 1px;
         background-color: $lightGray;
-        margin-left: 15px;
+        
     }
+
+    &::before {
+        margin-right: 15px;
+        
+        @include breakpoint(tablet){
+            content:none;
+        }
+    }
+
+    &::after {
+        margin-left: 15px;
+
+        @include breakpoint(tablet){
+            width:200px;
+        }
+    }
+    
 }

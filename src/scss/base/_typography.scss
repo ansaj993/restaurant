@@ -68,6 +68,7 @@ blockquote {
     margin:50px auto;
     color:$darkGray;
     position: relative;
+    text-align: center;
 
     @include breakpoint(mobile_l) {
         width:80%;
@@ -76,6 +77,11 @@ blockquote {
     @include breakpoint(tablet) {
         margin: 70px auto 0;
     }
+
+    @include breakpoint(desktop_min) {
+        font-size:28px;
+    }
+
     
     &::before, &::after {
         @include font-aleo(400);
@@ -94,6 +100,14 @@ blockquote {
             left: -40px;
         }
 
+        @include breakpoint(tablet) {
+            left: -10px;
+        }
+
+        @include breakpoint(desktop_large) {
+            left: -40px;
+        }
+
     }
 
     &::after {
@@ -106,6 +120,10 @@ blockquote {
 
         @include breakpoint(mobile_landscape) {
             right: -40px;
+        }
+
+        @include breakpoint(tablet) {
+            right: -20px;
         }
     }
   
