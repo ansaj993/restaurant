@@ -6,14 +6,12 @@
         width:48%;
     }
 
-    &__item, &__price {
+    &__item {
         @include font-aleo(400);
         color:$darkGray;
-    }
-
-    &__item {
         letter-spacing: 1px;
     }
+
 
     &__ingredients {
         @include font-aleo(300);
@@ -26,4 +24,28 @@
         }
     }
 
+}
+
+/*modal appearing in js*/
+
+.modal {
+     .table {
+        width: 50%;
+        margin: auto;
+
+        thead {
+            padding:15px 0;
+
+        }
+
+        &__item {
+            padding-top:20px;
+        }
+
+        &__ingredients {
+            border-bottom: 1px solid $lightGray;
+            padding-bottom:20px;
+
+        }
+    }
 }
