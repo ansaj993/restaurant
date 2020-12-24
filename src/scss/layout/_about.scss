@@ -1,4 +1,5 @@
 .about {
+  padding:$sectionPadding;
 
   &__subtitle {
       @include line;

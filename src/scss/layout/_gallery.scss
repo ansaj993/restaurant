@@ -1,13 +1,5 @@
 .gallery {
-    padding:30px 0;
-
-    @include breakpoint(tablet) {
-        padding:70px 0;
-    }
-
-    @include breakpoint(desktop_min) {
-        padding:100px 0;
-    }
+    padding:$sectionPadding;
 
     &__title {
         @include line;
