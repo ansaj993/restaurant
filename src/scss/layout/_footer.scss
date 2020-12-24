@@ -25,6 +25,15 @@
             width: 25%;
             text-align: left;
         }
+
+    }
+
+    /*footer navigation*/
+
+    &__list {
+        li {
+            @include font-aleo(400);
+        }
     }
 
 

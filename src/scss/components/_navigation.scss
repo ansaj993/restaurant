@@ -6,9 +6,12 @@ nav {
         width:40%;
     }
 
+    
+
     ul {
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
 
         a {
             @include font-aleo(400);
