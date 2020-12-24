@@ -29,13 +29,9 @@
     &::before, &::after {
         content:"";
         display: block;
-        width:20px;
+        width:40px;
         height: 1px;
         background-color: $lightGray;
-
-        @include breakpoint(tablet) {
-            width:40px;
-        }
         
     }
 

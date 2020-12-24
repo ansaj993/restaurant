@@ -1,6 +1,13 @@
 .dishes {
     padding:$sectionPadding;
 
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:50px;
+    }
+
     &__wrap {
         display:flex;
         justify-content: space-between;
@@ -9,12 +16,17 @@
     
     &__title {
         @include line;
+        margin-bottom:0;
+
+        &::before {
+            content:none;
+        }
+
+        text-align:left;
         
     }
 
     @include breakpoint(tablet) {
         padding:70px 0;
-    }
-
-   
+    }   
 }

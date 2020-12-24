@@ -1,0 +1,53 @@
+/*controls for slider and carousel*/
+
+.dots {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+
+    .dot {
+        background-color:$lightGray;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: $red;
+        }
+    }
+}
+
+.arrows {
+    width:100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    top:50%;
+    padding: 0 15px;
+
+    @include breakpoint(tablet) {
+        padding: 0 50px;
+    }
+
+    .arrow {
+        width: 30px;
+        height: 100%;
+        border:solid white;
+        border-width: 0px 1px 1px 0;  
+        transform:rotate(-45deg);
+        cursor: pointer;
+    
+        &--left {
+            transform: rotate(135deg);
+        }
+
+        &:hover {
+            border:solid $red;
+            border-width: 0px 1px 1px 0;
+        }
+    }
+
+}
+

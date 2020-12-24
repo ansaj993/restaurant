@@ -3,14 +3,13 @@
     width: 100%;
     position:relative;
     border-bottom:4px solid $red;
-    z-index: 1;
     
     &__wrapper {
         background: no-repeat center;
         background-size: cover;
         display:flex;
         align-items: center;
-        position:absolute;
+        position:absolute;              /*positioning all slides on top of banner*/
         top:0;
         left:0;
         width: 100%;
@@ -59,4 +58,11 @@
             margin-left:18px;
         }
     }
+
+    .dots {
+        position:absolute;
+        bottom: 30px;
+        left:47%;
+    }
+
 }

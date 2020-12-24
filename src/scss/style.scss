@@ -10,6 +10,7 @@
 @import "layout/gallery";
 @import "layout/footer";
 
+@import "base/reset";
 @import "base/fonts";
 @import "base/typography";
 
@@ -18,33 +19,4 @@
 @import "components/dishes-item";
 @import "components/photoGallery";
 @import "components/arrow-top";
-
-
-
-*{
-    box-sizing: border-box;
-}
-
-body {
-    @include reset;
-    text-align: center;
-
-    @include breakpoint(tablet) {
-        text-align: left;
-    }
-}
-
-.header__wrap, .wrapper, .footer__wrap {
-    width: 85%;
-    max-width: 1100px;
-    margin:auto;
-    position:relative;
-
-    @include breakpoint(mobile_landscape) {
-        width:90%;
-    }
-
-    @include breakpoint(desktop_min) {
-        width:87%;
-    }
-}
+@import "components/controls";
