@@ -3,10 +3,13 @@ nav {
 
     @include breakpoint(desktop_min) {
         display: block;
-        width:40%;
+        width:45%;
         position: relative;
         background: transparent;
+    }
 
+    @include breakpoint(desktop_large) {
+        width:40%;
     }
 
     ul {
