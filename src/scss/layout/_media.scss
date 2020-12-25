@@ -1,6 +1,11 @@
 /*media queries*/
 
 @mixin breakpoint($point){
+    @if $point == mobile_m {
+      @media only screen and (min-width: 360px) {
+        @content;
+      }
+    } 
     @if $point == mobile_l {
       @media only screen and (min-width: 400px) {
         @content;

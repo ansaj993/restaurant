@@ -25,10 +25,14 @@ h2 {
 
 h3 {
     @include font-aleo(700);
-    font-size: 20px;
+    font-size: 16px;
     color:$darkerGray;
     text-transform: uppercase;
     margin-bottom:50px;
+
+    @include breakpoint(mobile_m) {
+        font-size: 20px;
+    }
 
     @include breakpoint(desktop_min){
         margin-bottom: 60px;

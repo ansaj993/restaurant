@@ -38,12 +38,26 @@
         font-size: 14px;
         display:flex;
         align-items: center;
+        position: relative;
 
-        &::before { 
+        &::before, &::after { 
             content: "\2661";
             font-size: 24px;
             margin-right: 5px;
             cursor: pointer;
         }
+
+        &::before {                 /*stroke heart*/
+            content: "\2661";
+        }
+
+        &::after {                  /*solid heart*/
+            content: "\2665";
+            position:absolute;
+            left:1px;
+            color:$red;
+            opacity: 0;
+        }
     }
 }
+

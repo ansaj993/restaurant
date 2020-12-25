@@ -16,15 +16,6 @@
         width:80px;
     }
 
-    &__icon {
-        margin:8px 0;
-        z-index: 100;
-
-        @include breakpoint(desktop_min) {
-            display: none;
-        }
-    }
-
     &__bar {
         height:2px;
         width: 28px;
@@ -36,9 +27,46 @@
     
     }
 
+    &__icon {
+        margin:8px 0;
+        height: 20px;
+        z-index: 100;
+
+        @include breakpoint(desktop_min) {
+            display: none;
+        }
+
+        
+    }
+
+ 
+
     @include breakpoint(desktop_min) {
         height: 110px;
     }
 
    
 }
+
+.active {
+    .header__bar {
+        &:nth-child(odd){
+            background-color: white;
+            transform-origin: center;
+        }
+
+        &:nth-child(even){
+            background-color: transparent;
+        }
+
+        &:first-child {
+            transform: translateY(13px) rotate(45deg);
+        }
+
+        &:last-child {
+            transform: rotate(-45deg);
+        }
+        
+    }
+}
+    

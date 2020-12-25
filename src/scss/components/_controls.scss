@@ -1,20 +1,29 @@
 /*controls for slider and carousel*/
 
 .dots {
-    width: 70px;
+    width: 60px;
     display: flex;
     justify-content: space-between;
 
     .dot {
         background-color:$lightGray;
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
         cursor: pointer;
+
+        @include breakpoint(mobile_m) {
+            width:10px;
+            height:10px;
+        }
     
         &:hover {
             background-color: $red;
         }
+    }
+
+    @include breakpoint(mobile_m) {
+        width: 70px;
     }
 }
 
