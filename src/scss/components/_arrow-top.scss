@@ -6,9 +6,8 @@
     @include breakpoint(tablet) {
         position: sticky;
         bottom: 0;
-        display: flex;
-        justify-content: flex-end;
-        width: 98%;     /*width of whole div*/
-        padding-top:20px;
+        width: 100px;
+        padding-top: 20px;
+        margin-left: auto;
     }
 }
