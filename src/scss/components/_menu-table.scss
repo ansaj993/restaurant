@@ -55,12 +55,13 @@
 
     }
 
-    &__icon {
-        width: 20px;
-        height: 20px;
+    &__icon {                   /*X icon*/
+        width: 30px;
+        height: 30px;
         margin-left: auto;
         margin-bottom: 10px;
         position: relative;
+        cursor:pointer;
 
 
         &::before, &::after {
@@ -72,7 +73,6 @@
             bottom:50%;
             left:0;
             background-color: $darkerGray;
-            cursor: pointer;
 
         }
 
