@@ -36,28 +36,28 @@
     &__like {
         text-align:left;
         font-size: 14px;
-        display:flex;
-        align-items: center;
-        position: relative;
+        display:flex; 
+    }
 
-        &::before, &::after { 
-            content: "\2661";
+    &__heart {
+        &::after {
+            content: attr(title);
             font-size: 24px;
             margin-right: 5px;
-            cursor: pointer;
+            cursor: pointer;   
         }
 
-        &::before {                 /*stroke heart*/
-            content: "\2661";
+        &:hover {
+            &::after {
+                content:"\2665";
+                color:$red;
+            }
         }
+        
+    }
 
-        &::after {                  /*solid heart*/
-            content: "\2665";
-            position:absolute;
-            left:1px;
-            color:$red;
-            opacity: 0;
-        }
+    &__number {
+        margin-right: 3px;
     }
 }
 

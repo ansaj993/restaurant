@@ -92,7 +92,16 @@
     }
 
     &__image {
-        margin-bottom: 53px;
+        margin: 0 auto 20px;
+        width: 100px;
+        @include breakpoint(tablet) {
+            width: 150px;
+            margin: 0 auto 53px;
+        }
+
+        img {
+            width: 100%;
+        }
     }
 
     .table {

@@ -20,3 +20,15 @@ $('.menu__button').on('click',function() {
 $('.modal__icon').on('click',function() {
     $('.modal').hide();
 })
+
+
+//dishes heart and counter
+
+
+$('.dish__heart').on('click',function(e){
+    $(this).attr('title','♥').css('color','#F34949');
+
+    $(this).next().html(parseInt($(".dish__number").html())+1);
+
+})
+
