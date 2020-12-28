@@ -1,0 +1,69 @@
+/*modal of table menu appearing in js*/
+
+.modal {
+    @include modal($opacityBlack);
+    padding:70px 0;
+    overflow-y: auto;
+
+    &__wrap {
+        max-width: 748px;
+        width: 90%;
+        margin: auto;
+        background-color: white;
+        padding: 30px;
+        position:relative;
+
+        @include breakpoint(tablet){
+            padding: 50px 20px;
+        }
+
+    }
+
+    &__icon {                   /*X icon*/
+        @include iconX;
+    }
+
+    &__bar {
+        @include barIcon($darkerGray);
+    }
+
+    &__image {
+        margin: 0 auto 20px;
+        width: 100px;
+        @include breakpoint(tablet) {
+            width: 150px;
+            margin: 0 auto 53px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .table {
+        max-width: 494px;
+        width: 100%;
+        margin:auto;
+        border-collapse: collapse;
+
+        thead {
+            .table__item {
+                padding:15px 0;
+            }
+        }
+
+        tbody {
+            .table__item {
+                padding-top:20px;
+                border-top: 1px solid $lightGray;
+            }
+        }
+        
+
+        &__ingredients {
+            padding-bottom:20px;
+            
+        }
+    }
+
+}
