@@ -36,7 +36,6 @@
         @include breakpoint(tablet){
             width:40px;
         }
-        
     }
 
     &::before {
@@ -53,8 +52,7 @@
         @include breakpoint(tablet){
             width:200px;
         }
-    }
-    
+    }  
 }
 
 /*nav border*/
@@ -63,4 +61,51 @@
         border: 1px solid $color;
         border-left-width:0;
         border-right-width: 0;
+}
+
+/*modal for table and gallery*/
+
+@mixin modal($bgColor) {
+    display: none;
+    background-color:$bgColor;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/*x icon*/
+
+@mixin iconX {
+    position: absolute;
+    top: 20px;
+    right:20px;
+    width: 28px;
+    height: 28px;
+    cursor:pointer;
+        
+    &:hover {
+        .modal__bar {
+            background-color: $red;
+        }
+    }
+} 
+
+@mixin barIcon($bgColor) {
+    width: 100%;
+    height: 1px;
+    position:absolute;
+    top:50%;
+    left:0;
+    background-color: $bgColor;
+
+    &:first-child {
+        transform: rotate(45deg);
+    }
+
+    &:last-child {
+        transform: rotate(-45deg);
+    }
 }

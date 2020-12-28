@@ -31,14 +31,7 @@
 /*modal appearing in js*/
 
 .modal {
-    display: none;
-    background-color:rgba(8, 8, 8, 0.9);
-    position:fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
+    @include modal($opacityBlack);
     padding:70px 0;
     overflow-y: auto;
 
@@ -48,47 +41,20 @@
         margin: auto;
         background-color: white;
         padding: 30px;
+        position:relative;
 
         @include breakpoint(tablet){
-            padding: 20px 20px 50px;
+            padding: 50px 20px;
         }
 
     }
 
     &__icon {                   /*X icon*/
-        width: 30px;
-        height: 30px;
-        margin-left: auto;
-        margin-bottom: 10px;
-        position: relative;
-        cursor:pointer;
+        @include iconX;
+    }
 
-
-        &::before, &::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 1px;
-            position:absolute;
-            bottom:50%;
-            left:0;
-            background-color: $darkerGray;
-
-        }
-
-        &::before {
-            transform: rotate(45deg);
-        }
-
-        &::after {
-            transform: rotate(-45deg);
-        }
-
-        &:hover {
-            &::before, &::after {
-                background-color: $red;
-            }
-        }
+    &__bar {
+        @include barIcon($darkerGray);
     }
 
     &__image {
