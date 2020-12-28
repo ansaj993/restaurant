@@ -11,7 +11,7 @@
     &__wrapper {
         background: no-repeat center;
         background-size: cover;
-        display:flex;
+        display:none;
         align-items: center;
         position:absolute;              /*positioning all slides on top of banner*/
         top:0;
@@ -25,7 +25,7 @@
 
         &--second {
             background-image: url(../images/fruit-2373434_1920.jpg);
-            display: none;
+            
         }   
     }
 
@@ -70,3 +70,4 @@
     }
 
 }
+

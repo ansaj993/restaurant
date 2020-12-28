@@ -35,12 +35,51 @@ $('.dish__heart').on('click',function(){
     }
 
     else {
-        number.html(parseInt(number.html())-1);
         $(this).attr('title','♡').css('color','#555555');
+        number.html(parseInt(number.html())-1);
     }
-   
-
 })
 
+//banner
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+//arrows
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+//dots
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName('banner__wrapper');
+    var dots = document.getElementsByClassName('dot');
+
+    if (n > slides.length){
+        slideIndex = 1;
+    }
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].style.background = "#b7b7b7";
+    }
+
+    slides[slideIndex - 1].style.display = "flex";
+    dots[slideIndex - 1].style.background = "#f34949";
+}
 
 
