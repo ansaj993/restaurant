@@ -25,10 +25,20 @@ $('.modal__icon').on('click',function() {
 //dishes heart and counter
 
 
-$('.dish__heart').on('click',function(e){
-    $(this).attr('title','♥').css('color','#F34949');
+$('.dish__heart').on('click',function(){
 
-    $(this).next().html(parseInt($(".dish__number").html())+1);
+    var number = $(this).parent().find('.dish__number');
+
+    if($(this).attr('title') == '♡') {
+        $(this).attr('title','♥').css('color','#F34949');
+        number.html(parseInt(number.html())+1);
+    }
+
+    else {
+        number.html(parseInt(number.html())-1);
+        $(this).attr('title','♡').css('color','#555555');
+    }
+   
 
 })
 
