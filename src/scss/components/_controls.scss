@@ -59,12 +59,9 @@
 
         &:hover {
             border:solid $red;
-            border-width: 0px 1px 1px 0;
+            border-width: 0px 2px 2px 0;
         }
     }
 
 }
 
-.change {
-    background-color: $red;
-}

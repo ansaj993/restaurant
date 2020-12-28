@@ -1,0 +1,35 @@
+//style for lightbox
+
+.lightbox {
+    @include modal($opacityBlack);
+
+    &__icon {
+        @include iconX;
+
+        &:hover {
+            .lightbox__bar {
+                background-color: $red;
+            }
+        }
+    }
+
+    &__bar {
+        @include barIcon(white);
+    }
+
+    &__image {
+        width:100%;
+        position:relative;
+
+        img {
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    .arrow {
+        z-index: 100;
+    }
+}
