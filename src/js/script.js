@@ -126,3 +126,25 @@ function showImages(n) {
 
     images[imageIndex - 1].style.display = "flex";
 }
+
+//carousel
+
+var cardIndex = 1;
+showCard(cardIndex);
+
+function currentCard(n) {
+    showCard(cardIndex = n);
+}
+
+function showCard() {
+    var i;
+    var cards = document.getElementsByClassName('dish__wrap');
+    var dots = document.getElementsByClassName('dishes__dot');
+
+
+    for(i = 0; i < dots.length; i++) {
+        dots[i].style.background = "#b7b7b7";
+    }
+    
+    dots[cardIndex - 1].style.background = "#f34949";
+}

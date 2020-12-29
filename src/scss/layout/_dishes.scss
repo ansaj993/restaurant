@@ -16,9 +16,18 @@
     }
 
     &__wrap {
-        display:flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 100% 100% 100% 100%;
+        overflow: hidden;
+        grid-column-gap:25px;
+
+        @include breakpoint(tablet) {
+            grid-template-columns: 48% 48%;
+        }
+
+        @include breakpoint(desktop_min) {
+            grid-template-columns: 24% 24% 24% 24%;
+        }
     }
     
     &__title {

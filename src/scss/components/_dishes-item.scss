@@ -1,16 +1,7 @@
 /*item in dishes section*/
 
 .dish {
-    width: 100%;
     margin-bottom: 25px;
-
-    @include breakpoint(mobile_landscape) {
-        width: 48%;
-    }
-
-    @include breakpoint(desktop_min) {
-        width: 23%;
-    }
 
     &__image {
         width:100%;
@@ -47,13 +38,6 @@
             cursor: pointer;   
         }
 
-        &:hover {
-            &::after {
-                content:"\2665";
-                color:$red;
-            }
-        }
-        
     }
 
     &__number {

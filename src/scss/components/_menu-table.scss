@@ -10,8 +10,24 @@
 
     &__item {
         @include font-aleo(400);
-        color:$darkGray;
-        letter-spacing: 1px;
+
+        &--menu {
+            color:$darkGray;
+            letter-spacing: 1px;
+            background: white;
+            z-index: 1;
+            position: relative;
+    
+            &:first-child {
+                float: left;
+                padding-right: 10px;
+            }
+    
+            &:last-child {
+                padding-left:10px;
+            }
+        }
+       
     }
 
 
@@ -19,7 +35,13 @@
         @include font-aleo(300);
         font-style: italic;
         color:$lightGray;
-        padding-bottom:20px;
+        padding: 10px 0 20px;
+        
+        &--menu {
+            border-top:1px solid $lightGray;
+            position: relative;
+            top:-9px;
+        }
 
         @include breakpoint(desktop_min) {
             padding-bottom:60px;
