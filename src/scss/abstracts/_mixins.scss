@@ -85,6 +85,7 @@
     width: 28px;
     height: 28px;
     cursor:pointer;
+    z-index:100;
         
     &:hover {
         .modal__bar {

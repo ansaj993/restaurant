@@ -82,4 +82,47 @@ function showSlides(n) {
     dots[slideIndex - 1].style.background = "#f34949";
 }
 
+//gallery lightbox
 
+var lightbox = document.getElementById('imageLightbox')
+
+function showLightbox() {
+    lightbox.style.display = "flex";
+}
+
+function hideLightbox() {
+    lightbox.style.display = "none";
+}
+
+var imageIndex = 1;
+showImages(imageIndex);
+
+//arrows
+
+function plusImages(n) {
+    showImages(imageIndex += n);
+}
+
+function currentImage(n) {
+    showImages(imageIndex = n);
+}
+
+
+function showImages(n) {
+    var i;
+    var images = document.getElementsByClassName('lightbox__image');
+
+    if (n > images.length){
+        imageIndex = 1;
+    }
+
+    if (n < 1) {
+        imageIndex = image.length;
+    }
+
+    for (i = 0; i < images.length; i++){
+        images[i].style.display = "none";
+    }
+
+    images[imageIndex - 1].style.display = "flex";
+}

@@ -5,7 +5,7 @@
 
     @include breakpoint(tablet){
         padding:$sectionPadding;
-
+        padding-bottom:0;
     }
 
     &__title {
