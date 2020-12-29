@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/style.css">
+    <link rel="stylesheet" type="text/css" href="src/js/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="src/js/slick-1.8.1/slick/slick-theme.css"/>
     
     <title>Restaurant</title>
 </head>
@@ -78,7 +80,10 @@
     </section>
     
     <main>
-        <div class="wrapper">               <!--All sections without arrow-->
+        
+        <!--All sections-->
+        
+        <div class="wrapper">
             <section id="menu" class="menu">
 
                 <h3 class="menu__title">The Menu</h3>
@@ -357,12 +362,6 @@
                 <div class="dishes__heading">
                     <h3 class="dishes__title">Featured dishes</h3>
 
-                    <div class="dots">
-                        <div class="dot dishes__dot" onclick="currentCard(1)"></div>
-                        <div class="dot dishes__dot" onclick="currentCard(2)"></div>
-                        <div class="dot dishes__dot" onclick="currentCard(3)"></div>
-                        <div class="dot dishes__dot" onclick="currentCard(4)"></div>
-                    </div>
                 </div>
 
                 
@@ -419,8 +418,7 @@
                         </div>
         
                         <p class="dish__like"><span class="dish__heart" title="&#9825;"></span> <span class="dish__number">32</span> people love this</p>
-                    </div>        
-        
+                    </div>                
 
                 </div>
                 
@@ -583,7 +581,8 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="src/js/slick-1.8.1/slick/slick.min.js"></script>
     <script src="/src/js/script.js"></script>
 </body>
 </html>

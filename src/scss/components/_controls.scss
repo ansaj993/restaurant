@@ -65,3 +65,41 @@
 
 }
 
+
+/*slick carousel dots*/
+
+.slick-slider {
+    .slick-dots {
+        top: -74px;
+        bottom: 0;
+        text-align: right;
+
+        li {
+            margin:0;
+            width: 15px;
+            height: 15px;
+
+        }
+
+        button {
+            padding:0;
+            &:before {
+                font-size: 10px;
+            }
+        }
+
+        .slick-active {
+            button {
+                &:before {
+                    color:$red;
+                    opacity: 1;
+                }
+            }
+            
+        }
+        
+    }
+} 
+
+
+
