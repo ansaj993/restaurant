@@ -2,6 +2,9 @@
 
 nav {
     display: none;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
 
     @include breakpoint(desktop_min) {
         display: block;
@@ -31,7 +34,10 @@ nav {
         }
 
         a {
-            @include navBorder(transparent);
+            border:1px solid;
+            border-color:transparent;
+            border-left-width: 0px;
+            border-right-width: 0px;
             font-size:20px;
             color:white;
             padding:10px 12px;
@@ -42,11 +48,11 @@ nav {
             }
 
             &:hover {
-                @include navBorder($darkerGray);
+                border-color:$darkerGray;
                 color:$darkerGray;
 
                 @include breakpoint(desktop_min) {
-                    @include navBorder($red);
+                    border-color:$red;
                     color:$red;
                 }
 
@@ -56,10 +62,10 @@ nav {
     }
 }
 
-/*adding class in js*/
+/*adding class to navigation in js*/
 
 .open {
     @include modal($red);
     display: flex;
-    align-items: center;   
 }
+

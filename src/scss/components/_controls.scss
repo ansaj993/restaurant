@@ -65,6 +65,16 @@
 
 }
 
+/*x icon*/
+
+.icon {
+    @include iconX;
+}
+
+.bar {
+    @include barIcon(white);
+}
+
 
 /*slick carousel dots*/
 
@@ -101,5 +111,20 @@
     }
 } 
 
+
+/*back to top arrow*/
+
+.arrow-top {
+    padding:30px 0;
+
+    @include breakpoint(tablet) {
+        position: sticky;
+        bottom: 0;
+        width: 100px;
+        padding-top: 20px;
+        margin-left: auto;
+        z-index: 1;
+    }
+}
 
 

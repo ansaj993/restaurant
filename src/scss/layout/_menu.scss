@@ -29,11 +29,11 @@
 
         @include breakpoint(tablet) {
             margin: 0 auto 50px;
-          }
+        }
 
         @include breakpoint(desktop_min) {
             margin: 0 auto 70px;
-          }
+        }
     }
 
     &__wrap {
@@ -52,6 +52,7 @@
         padding:15px 25px;
         letter-spacing: 1px;
         cursor: pointer;
+        
         &::after {
             content: "";
             width: 5px;

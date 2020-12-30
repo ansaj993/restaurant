@@ -1,4 +1,4 @@
-/*header*/
+/*header section*/
 
 .header {
     height:66px;
@@ -31,12 +31,16 @@
         margin:8px 0;
         height: 20px;
         z-index: 100;
-        position: relative;
+        top:0;
+        right:0;
 
         @include breakpoint(desktop_min) {
             display: none;
         }
+    }
 
+    &__bar {
+        background-color: $darkerGray;
     }
 
     @include breakpoint(desktop_min) {
@@ -45,6 +49,7 @@
 }
 
 .active {
+    margin:0;
     .header__bar {
         &:nth-child(odd){
             @include barIcon(white);

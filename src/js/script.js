@@ -117,7 +117,7 @@ function showImages(n) {
     }
 
     if (n < 1) {
-        imageIndex = image.length;
+        imageIndex = images.length;
     }
 
     for (i = 0; i < images.length; i++){

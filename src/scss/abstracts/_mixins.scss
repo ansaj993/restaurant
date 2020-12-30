@@ -11,7 +11,6 @@
 
 @mixin list-reset {
     @include reset;
-
     list-style-type:none;
 }
 
@@ -55,14 +54,6 @@
     }  
 }
 
-/*nav border*/
-
-@mixin navBorder($color){
-        border: 1px solid $color;
-        border-left-width:0;
-        border-right-width: 0;
-}
-
 /*modal for table and gallery*/
 
 @mixin modal($bgColor) {
@@ -80,15 +71,18 @@
 
 @mixin iconX {
     position: absolute;
-    top: 20px;
-    right:20px;
     width: 28px;
     height: 28px;
     cursor:pointer;
     z-index:100;
+
+    @include breakpoint(tablet) {
+        top: 20px;
+        right:20px;
+    }
         
     &:hover {
-        .modal__bar {
+        .bar {
             background-color: $red;
         }
     }

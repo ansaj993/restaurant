@@ -19,12 +19,14 @@
 
     }
 
-    &__icon {                   /*X icon*/
-        @include iconX;
+    .icon {
+        top:20px;
+        right: 20px;
     }
 
-    &__bar {
-        @include barIcon($darkerGray);
+
+    .bar {
+        background-color:$darkGray;
     }
 
     &__image {

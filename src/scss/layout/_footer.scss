@@ -32,12 +32,11 @@
 
     /*footer navigation*/
 
-    &__list {
-        li {
-            @include font-aleo(400);
-        }
-    }
+    
 
+    li {
+        @include font-aleo(400);
+    }
 
     &__logo {
         margin-bottom:10px;
@@ -50,8 +49,5 @@
     li, a {
         color:white;
     }
-
-  
-
 
 }

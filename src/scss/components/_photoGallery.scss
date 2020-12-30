@@ -3,18 +3,9 @@
 .lightbox {
     @include modal($opacityBlack);
 
-    &__icon {
-        @include iconX;
-
-        &:hover {
-            .lightbox__bar {
-                background-color: $red;
-            }
-        }
-    }
-
-    &__bar {
-        @include barIcon(white);
+    .icon {
+        top:20px;
+        right: 20px;
     }
 
     &__image {
@@ -29,7 +20,8 @@
         }
     }
 
-    .arrow {
-        z-index: 100;
+    .arrows {
+        z-index: 1;
     }
+
 }

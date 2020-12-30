@@ -7,7 +7,7 @@ h1 {
     line-height: 1.2em;
     text-align: center;
     @include breakpoint(tablet) {
-        font-size: 80px;
+    font-size: 80px;
     }
 }
 
