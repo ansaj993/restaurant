@@ -77,7 +77,7 @@
     z-index:100;
 
     @include breakpoint(tablet) {
-        top: 20px;
+        top: 0px;
         right:20px;
     }
         
