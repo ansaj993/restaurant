@@ -11,7 +11,7 @@
     &__item {
         @include font-aleo(400);
 
-        &--menu {
+        &--food {
             color:$darkGray;
             letter-spacing: 1px;
             background: white;
@@ -37,7 +37,7 @@
         color:$lightGray;
         padding: 10px 0 20px;
         
-        &--menu {
+        &--food {
             border-top:1px solid $lightGray;
             position: relative;
             top:-9px;
